@@ -78,13 +78,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tx1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:text="مبلغ کل"
+        android:textColor="#0069c0"
         app:layout_constraintBottom_toBottomOf="@+id/editText6"
         app:layout_constraintStart_toEndOf="@+id/editText6" />
 
