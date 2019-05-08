@@ -8,14 +8,14 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/tx_frontpercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="70dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="72dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/bt_equal"
@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/tx_incompercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -47,11 +47,11 @@
         android:layout_marginBottom="50dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/tx_frontpercent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/tx_totalmonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -59,11 +59,11 @@
         android:layout_marginBottom="50dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toTopOf="@+id/tx_incompercent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/tx_totalmoney"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
@@ -72,7 +72,7 @@
         android:layout_marginBottom="50dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toTopOf="@+id/tx_totalmonth"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -81,45 +81,72 @@
         android:id="@+id/tx1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="13dp"
         android:text="مبلغ کل"
         android:textColor="#0069c0"
-        app:layout_constraintBottom_toBottomOf="@+id/editText6"
-        app:layout_constraintStart_toEndOf="@+id/editText6" />
+        app:layout_constraintBottom_toBottomOf="@+id/tx_totalmoney"
+        app:layout_constraintStart_toEndOf="@+id/tx_totalmoney" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tx2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/editText5"
-        app:layout_constraintStart_toEndOf="@+id/editText5" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="13dp"
+        android:text="تعداد ماه بازپپرداخت"
+        android:textColor="#0069c0"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_totalmonth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_totalmonth" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tx3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
-        app:layout_constraintStart_toEndOf="@+id/editText4" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="13dp"
+        android:text="درصد سود "
+        android:textColor="#0069c0"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_incompercent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_incompercent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tx4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintStart_toEndOf="@+id/editText2" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="12dp"
+        android:text="درصد پیش پرداخت "
+        android:textColor="#0069c0"
+        app:layout_constraintBottom_toBottomOf="@+id/tx_frontpercent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/tx_frontpercent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/counting" />
 
 </android.support.constraint.ConstraintLayout>
