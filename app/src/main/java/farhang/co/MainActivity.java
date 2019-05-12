@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Result.class);
                 startActivity(intent);
 
+                int e= (int) Integer.valueOf(String.valueOf(tx_totalmoney));
+                int f=Integer.parseInt(String.valueOf(tx_frontpercent));
+                
 
             }
         });
