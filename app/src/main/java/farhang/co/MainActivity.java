@@ -35,9 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Result.class);
                 startActivity(intent);
 
-                int e= (int) Integer.valueOf(String.valueOf(tx_totalmoney));
+                int e=Integer.valueOf(String.valueOf(tx_totalmoney));
                 int f=Integer.parseInt(String.valueOf(tx_frontpercent));
-                
+                int g =Integer.parseInt(String.valueOf(tx_incompercent));
+                int h =Integer.parseInt(String.valueOf(tx_totalmonth));
+                int moneyfront=percent(e,f);
+
 
             }
         });
