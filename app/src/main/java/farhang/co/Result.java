@@ -22,6 +22,11 @@ public class Result extends AppCompatActivity {
         tx_payment=findViewById(R.id.tx_payment);
         tx_frontpayment=findViewById(R.id.tx_frontpayment);
 
+        int moneyfront= (int) getIntent().getExtras().getInt("front");
+        int income=getIntent().getExtras().getInt("income");
+        int totalcost=getIntent().getExtras().getInt("totalcost");
+        int payment=getIntent().getExtras().getInt("payment");
+
 
 
 
