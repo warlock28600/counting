@@ -32,14 +32,21 @@ public class MainActivity extends AppCompatActivity {
         bt_equal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // استارت resuult Activiti
                 Intent intent = new Intent(MainActivity.this, Result.class);
                 startActivity(intent);
-
+            // تبدیل ورودی ها به int
                 int e=Integer.valueOf(String.valueOf(tx_totalmoney));
                 int f=Integer.parseInt(String.valueOf(tx_frontpercent));
                 int g =Integer.parseInt(String.valueOf(tx_incompercent));
                 int h =Integer.parseInt(String.valueOf(tx_totalmonth));
+                //محاسبه درصد بیش برداخت
                 int moneyfront=percent(e,f);
+                //محاسبه سود
+                int i=e-moneyfront;
+                int incomepercent=percent(i,g);
+                int income=incomepercent*h;
+
 
 
             }
