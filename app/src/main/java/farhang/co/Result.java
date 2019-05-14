@@ -26,6 +26,17 @@ public class Result extends AppCompatActivity {
         int income=getIntent().getExtras().getInt("income");
         int totalcost=getIntent().getExtras().getInt("totalcost");
         int payment=getIntent().getExtras().getInt("payment");
+        // تبدیل دیتا به String
+        String totalincome=String.valueOf(income);
+        String Totalcost=String.valueOf(totalcost);
+        String mpayment=String.valueOf(payment);
+        String Forontpament=String.valueOf(moneyfront);
+
+
+        tx_frontpayment.setText(Forontpament);
+        tx_payment.setText(mpayment);
+        tx_Totalcost.setText(Totalcost);
+        tx_Totalincome.setText(totalincome);
 
 
 
