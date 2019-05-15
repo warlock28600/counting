@@ -71,6 +71,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginBottom="30dp"
         android:ems="10"
+        android:hint="مبلغ کل را وارد کنید "
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/tx_totalmonth"
         app:layout_constraintStart_toStartOf="parent"

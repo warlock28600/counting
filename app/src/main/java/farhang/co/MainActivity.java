@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 int Tm=Integer.parseInt(totalmonth);
 
 
-                // استارت resuult Activiti
-                Intent intent = new Intent(MainActivity.this , Result.class);
-                  intent.putExtra("totalmoney",tm);
-                  intent.putExtra("frontpercent",fp);
-                 intent.putExtra("incompercent",ip);
-                intent.putExtra("totalmonth",Tm);
-                startActivity(intent);
+                    // استارت resuult Activiti
+                    Intent intent = new Intent(MainActivity.this, Result.class);
+                    intent.putExtra("totalmoney", tm);
+                    intent.putExtra("frontpercent", fp);
+                    intent.putExtra("incompercent", ip);
+                    intent.putExtra("totalmonth", Tm);
+                    startActivity(intent);
 
 
 
@@ -82,8 +83,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-// فانکشن محاسبه درصد پیش پرداخت
-// a=total , b=percent
+
 
 
 
@@ -97,33 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-// تبدیل ورودی ها به int
 
-
-//int g =Integer.parseInt(String.valueOf(tx_incompercent));
-// int h =Integer.parseInt(String.valueOf(tx_totalmonth));
-
-
-//int moneyfront =e*f;
-                /*
-                //محاسبه  بیش برداخت
-                int moneyfront=percent(e,f);
-                //محاسبه سود
-                int i=e-moneyfront;
-                int incomepercent=percent(i,g);
-                int income=incomepercent*h;
-                // کل هزینه
-                int totalcost=income+moneyfront;
-                // محاسبه اقساط
-                int rest_cost=i+income;
-                int payment=rest_cost/h;
-                //moneyfront
-                //income
-                //totalcost
-                //payment
-*/
-
-//       intent.putExtra(  "front",moneyfront);
 
 
 
