@@ -13,6 +13,7 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
         tx1=findViewById(R.id.tx1);
         tx2=findViewById(R.id.tx2);
         tx3=findViewById(R.id.tx3);
@@ -21,6 +22,14 @@ public class Result extends AppCompatActivity {
         tx_Totalcost=findViewById(R.id.tx_Totalcost);
         tx_payment=findViewById(R.id.tx_payment);
         tx_frontpayment=findViewById(R.id.tx_frontpayment);
+
+        Bundle  bundle = new Bundle();
+
+        bundle.getInt("front");
+
+
+/*
+
 
         int moneyfront= (int) getIntent().getExtras().getInt("front");
         int income=getIntent().getExtras().getInt("income");
@@ -38,7 +47,7 @@ public class Result extends AppCompatActivity {
         tx_Totalcost.setText(Totalcost);
         tx_Totalincome.setText(totalincome);
 
-
+*/
 
 
     }
