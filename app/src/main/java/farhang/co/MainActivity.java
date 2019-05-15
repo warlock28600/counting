@@ -84,10 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 // فانکشن محاسبه درصد پیش پرداخت
 // a=total , b=percent
-    public int percent (int a , int b) {
-    int c = a/100;
-    int d=c*b;
-    return d;
+
 
 
     }
@@ -95,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-}
+
 
 
 
