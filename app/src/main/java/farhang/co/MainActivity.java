@@ -44,22 +44,29 @@ public class MainActivity extends AppCompatActivity {
                 int Tm=Integer.parseInt(totalmonth);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                 // استارت resuult Activiti
                 Intent intent = new Intent(MainActivity.this , Result.class);
+                  intent.putExtra("totalmoney",tm);
+                  intent.putExtra("frontpercent",fp);
+                 intent.putExtra("incompercent",ip);
+                intent.putExtra("totalmonth",Tm);
                 startActivity(intent);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -121,9 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
 //       intent.putExtra(  "front",moneyfront);
 
-//  intent.putExtra("income",income);
-//  intent.putExtra("totalcost",totalcost);
-// intent.putExtra("payment",payment);
+
 
 
 
