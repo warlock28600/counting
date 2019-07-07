@@ -1,7 +1,11 @@
 package farhang.co;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.InterruptedIOException;
@@ -9,13 +13,13 @@ import java.io.InterruptedIOException;
 public class Result extends AppCompatActivity {
 
     TextView tx1,tx2,tx3,tx4,tx_Totalincome,tx_Totalcost,tx_payment,tx_frontpayment;
-
+    Button Bt_return;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-
+        Bt_return=findViewById(R.id.Bt_return);
         tx1=findViewById(R.id.tx1);
         tx2=findViewById(R.id.tx2);
         tx3=findViewById(R.id.tx3);
@@ -53,20 +57,19 @@ public class Result extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
+        Bt_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Result.this,mainmeno.class);
+                startActivity(intent);
+            }
+        });
     }
     public int percent (int a , int b) {
         int c = a / 100;
         int d = c * b;
         return d;
     }
+
+
 }
